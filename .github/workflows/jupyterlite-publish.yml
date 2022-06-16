@@ -20,6 +20,7 @@ jobs:
         run: |
           python -m pip install -r .binder/requirements.txt
           python -m pip install -r .jupyterlite/requirements.txt
+          python -m pip install .
       - name: Build the JupyterLite site
         run: |
           mkdir -p content
